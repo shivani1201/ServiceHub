@@ -1,0 +1,11 @@
+.topbar { position: sticky; top: 0; z-index: 20; display: flex; align-items: center; gap: 0.9rem; height: var(--topbar-height); padding-inline: 1.1rem; background: rgba(250, 248, 245, 0.92); backdrop-filter: blur(8px); border-bottom: 1px solid var(--line); }
+.topbar__menu { display: grid; place-items: center; width: 40px; height: 40px; background: var(--paper-deep); border: 0; border-radius: 50%; color: var(--ink); }
+.topbar__title { font-size: 1.15rem; }
+.topbar__menu-wrap { position: relative; margin-left: auto; }
+.topbar__user { display: flex; align-items: center; gap: 0.5rem; padding: 0.3rem 0.7rem 0.3rem 0.3rem; background: var(--surface); border: 1px solid var(--line-strong); border-radius: 999px; }
+.topbar__user:hover { border-color: var(--violet); }
+.topbar__user-name { max-width: 130px; overflow: hidden; font-size: 0.875rem; font-weight: 600; text-overflow: ellipsis; white-space: nowrap; }
+.topbar__dropdown { position: absolute; top: calc(100% + 0.5rem); right: 0; z-index: 30; min-width: 180px; padding: 0.4rem; background: var(--surface); border: 1px solid var(--line); border-radius: 16px; box-shadow: var(--shadow-lift); }
+.topbar__dropdown button { display: flex; align-items: center; gap: 0.6rem; width: 100%; padding: 0.6rem 0.7rem; background: none; border: 0; border-radius: 10px; font-weight: 500; text-align: left; }
+.topbar__dropdown button:hover { background: var(--violet-tint); color: var(--violet); }
+@media (min-width: 960px) { .topbar__menu { display: none; } }

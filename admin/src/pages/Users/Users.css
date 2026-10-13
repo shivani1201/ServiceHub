@@ -1,0 +1,7 @@
+.user-detail { display: grid; gap: 1.25rem; }
+.user-detail__head { display: flex; align-items: center; gap: 1rem; }
+.user-detail__head > div { display: grid; gap: 0.3rem; }
+.user-detail__head .badge { width: fit-content; }
+.user-detail__grid { display: grid; gap: 0.9rem; grid-template-columns: 1fr 1fr; margin: 0; }
+.user-detail__grid dt { color: var(--ink-faint); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.02em; }
+.user-detail__grid dd { margin: 0.15rem 0 0; font-weight: 600; }

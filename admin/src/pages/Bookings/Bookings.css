@@ -1,0 +1,14 @@
+.bookings__sub { font-size: 0.8125rem; margin-top: 0.1rem; }
+.booking-detail { display: grid; gap: 1.5rem; }
+.booking-detail__grid { display: grid; gap: 0.9rem; grid-template-columns: 1fr 1fr; margin: 0; }
+.booking-detail__full { grid-column: 1 / -1; }
+.booking-detail__grid dt { color: var(--ink-faint); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.02em; }
+.booking-detail__grid dd { margin: 0.15rem 0 0; font-weight: 600; }
+.booking-detail__status { display: grid; gap: 0.6rem; padding-top: 1rem; border-top: 1px solid var(--line); }
+.booking-detail__options { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.booking-detail__options button { border: 1.5px solid transparent; }
+.booking-detail__options button.is-selected { border-color: currentColor; }
+.booking-detail__options button:disabled { cursor: not-allowed; }
+@media (max-width: 480px) {
+  .booking-detail__grid { grid-template-columns: 1fr; }
+}

@@ -1,0 +1,6 @@
+.categories__thumb { width: 42px; height: 42px; border-radius: 10px; object-fit: cover; flex-shrink: 0; }
+.categories__thumb--empty { background: var(--lavender); }
+.categories__form { display: grid; gap: 1rem; }
+.categories__image { display: flex; align-items: center; gap: 0.75rem; padding: 0.7rem; background: var(--paper-deep); border: 1.5px dashed var(--line-strong); border-radius: 14px; color: var(--ink-soft); font-weight: 600; }
+.categories__image img { width: 46px; height: 46px; object-fit: cover; border-radius: 10px; }
+.categories__image:hover { border-color: var(--violet); color: var(--violet); }

@@ -1,0 +1,11 @@
+.settings { max-width: 640px; }
+.settings__card { padding: 1.5rem; margin-bottom: 1.5rem; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-card); }
+.settings__card h2 { margin-bottom: 1.25rem; font-size: 1.1rem; }
+.settings__identity { display: flex; align-items: center; gap: 1rem; }
+.settings__identity > div { display: grid; gap: 0.3rem; }
+.settings__identity .badge { width: fit-content; }
+.settings__form { display: grid; gap: 1.1rem; }
+.password-field { position: relative; }
+.password-field .input { padding-right: 3rem; }
+.password-field__toggle { position: absolute; top: 50%; right: 0.35rem; display: grid; place-items: center; width: 2.3rem; height: 2.3rem; transform: translateY(-50%); background: none; border: 0; border-radius: 10px; color: var(--ink-soft); }
+.password-field__toggle:hover { background: var(--violet-tint); color: var(--violet); }

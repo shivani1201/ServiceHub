@@ -1,0 +1,2 @@
+.providers__status { display: flex; flex-wrap: wrap; gap: 0.3rem; }
+.providers__form { display: grid; gap: 1rem; }

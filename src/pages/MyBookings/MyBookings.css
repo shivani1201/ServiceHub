@@ -1,0 +1,7 @@
+.tabs { display: flex; gap: 0.4rem; overflow-x: auto; margin-bottom: 1.75rem; padding-bottom: 0.9rem; border-bottom: 1px solid var(--line); }
+.tabs button { display: inline-flex; flex-shrink: 0; align-items: center; gap: 0.4rem; padding: 0.55rem 1.05rem; background: var(--paper-deep); border: 0; border-radius: 999px; color: var(--ink-soft); font-weight: 600; white-space: nowrap; }
+.tabs button:hover { color: var(--violet); }
+.tabs button.is-active { background: var(--violet); color: #fff; }
+.tabs__count { display: grid; place-items: center; min-width: 20px; height: 20px; padding-inline: 0.25rem; background: rgba(255, 255, 255, 0.25); border-radius: 999px; font-size: 0.75rem; }
+.tabs button:not(.is-active) .tabs__count { background: rgba(63, 42, 158, 0.12); color: var(--violet); }
+.bk-list { display: grid; gap: 1rem; }

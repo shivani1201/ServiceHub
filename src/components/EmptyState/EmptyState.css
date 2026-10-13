@@ -1,0 +1,6 @@
+.empty { display: grid; justify-items: center; gap: 0.6rem; max-width: 520px; margin-inline: auto; padding: 3rem 1.5rem; text-align: center; }
+.empty h3 { font-size: 1.35rem; }
+.empty p { color: var(--ink-soft); max-width: 44ch; }
+.empty .btn { margin-top: 0.75rem; }
+.empty__icon { display: grid; place-items: center; width: 60px; height: 60px; margin-bottom: 0.4rem; border-radius: 50%; background: var(--lavender); color: var(--violet); }
+.empty--error .empty__icon { background: var(--danger-bg); color: var(--danger); }

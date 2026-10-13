@@ -1,0 +1,10 @@
+.profile { max-width: 720px; }
+.profile__card { padding: 1.5rem; margin-bottom: 1.5rem; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-card); }
+.profile__card h2 { margin-bottom: 1.25rem; font-size: 1.2rem; }
+.profile__form { display: grid; gap: 1.1rem; }
+.profile__avatar-btn { display: flex; align-items: center; gap: 1rem; justify-self: start; background: none; border: 0; }
+.profile__avatar-btn span { display: inline-flex; align-items: center; gap: 0.4rem; padding: 0.45rem 0.85rem; background: var(--paper-deep); border-radius: 999px; color: var(--ink-soft); font-size: 0.8125rem; font-weight: 600; }
+.profile__avatar-btn:hover span { background: var(--lavender); color: var(--violet-dark); }
+.profile__days { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.profile__days button { padding: 0.5rem 0.9rem; background: var(--paper-deep); border: 1.5px solid transparent; border-radius: 999px; font-weight: 600; }
+.profile__days button.is-selected { background: var(--lavender); border-color: var(--violet); color: var(--violet-dark); }

@@ -1,0 +1,10 @@
+.prov { position: relative; display: flex; align-items: flex-start; gap: 1rem; padding: 1.15rem; background: var(--surface); border: 1px solid var(--line); border-radius: 26px; transition: border-color 0.15s ease, box-shadow 0.15s ease; }
+.prov:hover { border-color: var(--lavender-strong); box-shadow: var(--shadow-card); }
+.prov__info { display: grid; gap: 0.3rem; min-width: 0; }
+.prov__name { display: flex; align-items: center; gap: 0.35rem; font-size: 1.1rem; }
+.prov__name svg { flex-shrink: 0; color: var(--violet); }
+.prov__name a::after { content: ''; position: absolute; inset: 0; border-radius: 26px; }
+.prov__cat { color: var(--violet); font-size: 0.875rem; font-weight: 600; }
+.prov__facts { display: flex; flex-wrap: wrap; gap: 0.2rem 0.9rem; color: var(--ink-soft); font-size: 0.875rem; }
+.prov__facts span { display: inline-flex; align-items: center; gap: 0.3rem; }
+.prov__new { color: var(--ink-faint); font-size: 0.8125rem; }

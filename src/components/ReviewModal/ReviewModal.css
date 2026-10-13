@@ -1,0 +1,4 @@
+.review__service { margin-bottom: 1rem; color: var(--ink-soft); }
+.review__stars { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem 1rem; margin-bottom: 1.25rem; }
+.review__label { font-weight: 600; color: var(--violet); }
+.review__error { margin-top: 1rem; }

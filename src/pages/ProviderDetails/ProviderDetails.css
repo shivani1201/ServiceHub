@@ -1,0 +1,25 @@
+.pd__hero { display: flex; flex-wrap: wrap; align-items: center; gap: 1.25rem; margin-bottom: 2.5rem; }
+.pd__hero-text { display: grid; gap: 0.4rem; }
+.pd__hero-text h1 { display: flex; align-items: center; gap: 0.45rem; font-size: clamp(1.6rem, 3.6vw, 2.25rem); }
+.pd__hero-text h1 svg { color: var(--violet); }
+.pd__cat { color: var(--violet); font-weight: 600; }
+.pd__facts { display: flex; flex-wrap: wrap; gap: 0.25rem 1.1rem; color: var(--ink-soft); font-size: 0.9375rem; }
+.pd__facts span { display: inline-flex; align-items: center; gap: 0.35rem; }
+.pd__layout { display: grid; gap: 2rem; }
+.pd__main { display: grid; gap: 2rem; min-width: 0; }
+.pd__section h2 { margin-bottom: 1rem; font-size: 1.35rem; }
+.pd__section p { color: var(--ink-soft); line-height: 1.7; }
+.pd__review-list { display: grid; gap: 1.25rem; }
+.pd__review { display: flex; gap: 0.85rem; }
+.pd__review-top { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem; }
+.pd__review-service { font-size: 0.8125rem; }
+.pd__review p:not(.pd__review-service):not(.muted) { margin-block: 0.2rem 0.3rem; color: var(--ink); }
+.pd__hours-card { padding: 1.35rem; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-card); }
+.pd__hours-card h3 { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 1rem; font-size: 1.05rem; }
+.pd__hours-card ul { display: grid; gap: 0.55rem; }
+.pd__hours-card li { display: flex; justify-content: space-between; font-size: 0.9rem; }
+.pd__hours-card li.is-off { color: var(--ink-faint); }
+@media (min-width: 960px) {
+  .pd__layout { grid-template-columns: 1fr 260px; align-items: start; }
+  .pd__side { position: sticky; top: calc(var(--nav-height) + 1.5rem); }
+}

@@ -1,0 +1,12 @@
+.dash__banner { margin-bottom: 1.75rem; }
+.dash__stats { display: grid; gap: 1rem; margin-bottom: 2.5rem; grid-template-columns: repeat(2, 1fr); }
+.stat { display: flex; align-items: center; gap: 0.85rem; padding: 1.15rem; background: var(--surface); border: 1px solid var(--line); border-radius: 20px; }
+.stat__icon { display: grid; place-items: center; width: 44px; height: 44px; flex-shrink: 0; background: var(--lavender); border-radius: 14px; color: var(--violet); }
+.stat > div { display: grid; line-height: 1.25; min-width: 0; }
+.stat strong { font-family: var(--font-display); font-size: 1.4rem; }
+.stat span { color: var(--ink-soft); font-size: 0.8125rem; }
+.dash__section { margin-bottom: 2.5rem; }
+.dash__section .bk-list { display: grid; gap: 1rem; }
+@media (min-width: 640px) {
+  .dash__stats { grid-template-columns: repeat(4, 1fr); }
+}

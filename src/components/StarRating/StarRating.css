@@ -1,0 +1,9 @@
+.stars { display: inline-flex; align-items: center; gap: 0.35rem; font-size: 0.875rem; color: var(--ink-soft); }
+.stars__row { display: inline-flex; gap: 1px; color: #d8d2c6; }
+.stars__row .is-on { color: #f2a413; }
+.stars__value { color: var(--ink); font-weight: 700; }
+.stars__count { color: var(--ink-faint); }
+.stars--interactive { gap: 0.15rem; }
+.stars__btn { display: grid; place-items: center; padding: 0.25rem; background: none; border: 0; border-radius: 10px; color: #d8d2c6; transition: color 0.12s ease, transform 0.12s ease; }
+.stars__btn.is-on { color: #f2a413; }
+.stars__btn:hover { transform: scale(1.12); }

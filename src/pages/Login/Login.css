@@ -1,0 +1,24 @@
+.auth { display: grid; min-height: 100vh; }
+.auth__aside { display: none; position: relative; overflow: hidden; padding: 2.5rem 3rem; background: var(--violet); color: #fff; }
+.auth__aside > * { position: relative; z-index: 1; }
+.auth__pitch { display: grid; gap: 1.5rem; }
+.auth__pitch h2 { max-width: 10ch; color: #fff; font-size: clamp(2.6rem, 4vw, 3.8rem); line-height: 1; letter-spacing: -0.04em; }
+.auth__points { display: grid; gap: 0.75rem; }
+.auth__points li { display: flex; align-items: flex-start; gap: 0.6rem; color: rgba(255, 255, 255, 0.86); }
+.auth__points svg { flex-shrink: 0; margin-top: 0.2rem; color: #ffb3a5; }
+.auth__aside-note { color: rgba(255, 255, 255, 0.6); font-size: 0.9375rem; }
+.auth__aside::after { content: ''; position: absolute; right: -70px; bottom: -90px; width: 320px; height: 400px; background: rgba(255, 255, 255, 0.07); border-radius: 999px 999px 0 0; }
+.auth__main { display: grid; align-content: center; justify-items: center; padding: 2rem 1.25rem 3rem; }
+.auth__card { display: grid; gap: 1.5rem; width: min(100%, 440px); }
+.auth__head { display: grid; gap: 0.35rem; }
+.auth__head h1 { font-size: 2.25rem; }
+.auth__form { display: grid; gap: 1.1rem; }
+.auth__foot { color: var(--ink-soft); }
+.auth__foot a { color: var(--violet); font-weight: 600; }
+.auth__foot a:hover { text-decoration: underline; }
+.auth__fill { padding: 0; background: none; border: 0; color: inherit; font-weight: 700; text-decoration: underline; }
+@media (min-width: 960px) {
+  .auth { grid-template-columns: minmax(360px, 5fr) 6fr; }
+  .auth__aside { display: flex; flex-direction: column; justify-content: space-between; }
+  .auth__card > .logo { display: none; }
+}

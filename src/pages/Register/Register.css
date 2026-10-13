@@ -1,0 +1,6 @@
+.auth__card--wide { width: min(100%, 560px); }
+.seg { display: grid; grid-template-columns: 1fr 1fr; gap: 0.3rem; padding: 0.3rem; background: var(--paper-deep); border-radius: 999px; }
+.seg button { padding: 0.65rem 0.75rem; background: transparent; border: 0; border-radius: 999px; color: var(--ink-soft); font-size: 0.9375rem; font-weight: 600; transition: background-color 0.15s ease, color 0.15s ease; }
+.seg button.is-active { background: var(--surface); box-shadow: var(--shadow-card); color: var(--violet-dark); }
+.register__provider { display: grid; gap: 1rem; margin: 0; padding: 1.25rem; background: var(--violet-tint); border: 0; border-radius: 20px; }
+.register__provider legend { padding: 0 0.4rem; font-family: var(--font-display); font-size: 1.05rem; font-weight: 700; }

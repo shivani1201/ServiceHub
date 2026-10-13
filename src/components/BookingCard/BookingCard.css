@@ -1,0 +1,26 @@
+.bk { display: grid; grid-template-columns: 64px 1fr; gap: 0.9rem 1rem; padding: 1.1rem; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-card); box-shadow: var(--shadow-card); }
+.bk__date { display: grid; align-content: center; justify-items: center; height: 72px; border-radius: 16px; background: var(--lavender); color: var(--violet-dark); font-size: 0.75rem; font-weight: 600; line-height: 1.1; }
+.bk__date strong { font-family: var(--font-display); font-size: 1.5rem; line-height: 1.1; }
+.bk__main { display: grid; gap: 0.45rem; min-width: 0; }
+.bk__top { display: flex; flex-wrap: wrap; align-items: center; gap: 0.4rem 0.75rem; }
+.bk__top h3 { font-size: 1.125rem; }
+.bk__who { color: var(--ink-soft); font-size: 0.9375rem; }
+.bk__who a { color: var(--violet); font-weight: 600; }
+.bk__who a:hover { text-decoration: underline; }
+.bk__facts { display: grid; gap: 0.25rem; color: var(--ink-soft); font-size: 0.9rem; }
+.bk__facts li, .bk__notes { display: flex; align-items: flex-start; gap: 0.45rem; }
+.bk__facts svg, .bk__notes svg { flex-shrink: 0; margin-top: 0.22rem; color: var(--ink-faint); }
+.bk__notes { padding: 0.55rem 0.75rem; background: var(--paper); border-radius: 12px; color: var(--ink-soft); font-size: 0.875rem; }
+.bk__side { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0.75rem; grid-column: 1 / -1; padding-top: 0.85rem; border-top: 1px dashed var(--line-strong); }
+.bk__price { font-family: var(--font-display); font-size: 1.35rem; font-weight: 700; }
+.bk__actions { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.bk__reviewed { display: inline-flex; align-items: center; gap: 0.35rem; color: var(--success); font-size: 0.875rem; font-weight: 600; }
+.bk--closed { background: #fdfcfa; box-shadow: none; }
+.bk--closed .bk__date { background: #eeeae3; color: var(--ink-soft); }
+.bk--closed .bk__price { color: var(--ink-faint); text-decoration: line-through; }
+@media (min-width: 760px) {
+  .bk { grid-template-columns: 76px 1fr auto; gap: 1.5rem; padding: 1.25rem 1.5rem; }
+  .bk__date { height: 84px; }
+  .bk__side { display: grid; grid-column: auto; justify-items: end; align-content: space-between; padding: 0; border-top: 0; }
+  .bk__actions { justify-content: flex-end; }
+}
